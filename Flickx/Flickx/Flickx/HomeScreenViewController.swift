@@ -11,24 +11,20 @@ import UIKit
 class HomeScreenViewController: UIViewController {
 
 	@IBOutlet weak var collectionView: UICollectionView!
+	
+	var appDelegate: AppDelegate!
+	var movies: [Movie] = [Movie]()
+	var genreId: Int? = nil
+	
+	
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		if let patternImage = UIImage(named: "Pattern") {
-			view.backgroundColor = UIColor(patternImage: patternImage)
-		}
-	
-		collectionView!.backgroundColor = UIColor.clearColor()
-		collectionView!.contentInset = UIEdgeInsets(top: 2, left: 5, bottom: 10, right: 5)
-		view.backgroundColor = UIColor.blackColor()
-		let layout = collectionView.collectionViewLayout as! FlickxLayout
-		layout.cellPadding = 5
-		layout.delegate = self
-		layout.numberOfColumns = 2
-		
-		
 
-	
+		 layoutHeight()
+		
+		appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+		
 	}
 	
 
@@ -54,26 +50,28 @@ extension HomeScreenViewController: UICollectionViewDataSource {
 }
 
 
-//extension HomeScreenCollectionViewController: FlickxLayoutDelegate {
-//	
-//	func layoutHeight()  {
-//		
-//		collectionView!.backgroundColor = UIColor.clearColor()
-//		collectionView!.contentInset = UIEdgeInsets(top: 23, left: 5, bottom: 10, right: 5)
-//		
-//		let layout = collectionView!.collectionViewLayout as! FlickxLayout
-//		
-//		
-//		layout.cellPadding = 5
-//		layout.delegate = self
-//		layout.numberOfColumns = 2
-//		
-//	}
-//	func collectionView(collectionView: UICollectionView, heightForItemAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//		return 100
-//	}
-//	
-//}
+extension HomeScreenViewController {
+	
+	func layoutHeight()  {
+		
+		if let patternImage = UIImage(named: "Pattern") {
+			view.backgroundColor = UIColor(patternImage: patternImage)
+		}
+		
+		collectionView!.backgroundColor = UIColor.clearColor()
+		collectionView!.contentInset = UIEdgeInsets(top: 2, left: 5, bottom: 10, right: 5)
+		view.backgroundColor = UIColor.blackColor()
+		let layout = collectionView.collectionViewLayout as! FlickxLayout
+		layout.cellPadding = 5
+		layout.delegate = self
+		layout.numberOfColumns = 2
+		
+	}
+	func collectionView(collectionView: UICollectionView, heightForItemAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+		return 100
+	}
+	
+}
 extension HomeScreenViewController: FlickxLayoutDelegate{
 	
 	
@@ -97,3 +95,4 @@ extension HomeScreenViewController: FlickxLayoutDelegate{
 	}
 
 }
+

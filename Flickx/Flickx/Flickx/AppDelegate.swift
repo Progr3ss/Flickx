@@ -12,10 +12,24 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
+	
+	var sharedSession = NSURLSession.sharedSession()
+	var requestToken: String? = nil
+	var requestGuestToken: String? = nil
+	var sessionID: String? = nil
+	var sessionGuestID: String? = nil
+	var userID: Int? = nil
+	
+	// configuration for TheMovieDB, we'll take care of this for you =)...
+	var config = Config()
+
 
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		// if necessary, update the configuration...
+		config.updateIfDaysSinceUpdateExceeds(7)
 		return true
 	}
 
@@ -42,5 +56,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 
 
+}
+extension AppDelegate {
+	
+	func tmdbURLFromParameters(parameters: [String:AnyObject], withPathExtension: String? = nil) -> NSURL {
+		
+		let components = NSURLComponents()
+		components.scheme = Constants.TMDB.ApiScheme
+		components.host = Constants.TMDB.ApiHost
+		components.path = Constants.TMDB.ApiPath + (withPathExtension ?? "")
+		components.queryItems = [NSURLQueryItem]()
+		
+		for (key, value) in parameters {
+			let queryItem = NSURLQueryItem(name: key, value: "\(value)")
+			components.queryItems!.append(queryItem)
+		}
+		
+		return components.URL!
+	}
 }
 

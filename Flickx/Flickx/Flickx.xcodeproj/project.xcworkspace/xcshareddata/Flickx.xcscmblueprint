@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "682972232EF9E71180F53A420F5A35C1A533D357" : 0,
+    "4270EBB272FCF3D3D527D5C345478F2644A83FFB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C4082543-EA96-4A77-9A13-66041D648A8E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "682972232EF9E71180F53A420F5A35C1A533D357" : "..\/..",
+    "4270EBB272FCF3D3D527D5C345478F2644A83FFB" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Flickx",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Flickx\/Flickx.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Progr3ss\/IOSProjects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4270EBB272FCF3D3D527D5C345478F2644A83FFB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Progr3ss\/PitchPerfect.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "682972232EF9E71180F53A420F5A35C1A533D357"
+    }
+  ]
+}

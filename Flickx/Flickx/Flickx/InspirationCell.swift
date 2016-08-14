@@ -10,8 +10,11 @@ import UIKit
 
 class InspirationCell: UICollectionViewCell {
   
-  @IBOutlet private weak var imageView: UIImageView!
+
+	@IBOutlet weak var imageView: UIImageView!
   @IBOutlet private weak var imageCoverView: UIView!
+
+  @IBOutlet weak var titleLabel: UILabel!
 	
 	
 //
@@ -23,24 +26,26 @@ class InspirationCell: UICollectionViewCell {
 //    }
 //  }
 	
-	override func prepareForReuse() {
-		imageView.image = UIImage(named: "Inspiration-1")
-	}
+//	override func prepareForReuse() {
+////		imageView.image = UIImage(named: "Inspiration-1")
+////		titleLabel.te
+////		imageView.contentMode = UIViewContentMode.ScaleAspectFit
+//	}
 	
 	override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
 		super.applyLayoutAttributes(layoutAttributes)
 		
 		let featuredHeight = UltravisualLayoutConstants.Cell.featuredHeight
 		let standardHeight = UltravisualLayoutConstants.Cell.standardHeight
-		
+//
 		let delta = 1 - ((featuredHeight - CGRectGetHeight(frame)) / (featuredHeight - standardHeight))
-		
+//
 		let minAlpha: CGFloat = 0.3
 		let maxAlpha: CGFloat = 0.75
-		
+//
 		imageCoverView.alpha = maxAlpha - (delta * (maxAlpha - minAlpha))
-		
-		let scale = max(delta, 0.5)
+//
+//		let scale = max(delta, 0.5)
 //		titleLabel.transform = CGAffineTransformMakeScale(scale, scale)
 //
 //		timeAndRoomLabel.alpha = delta
