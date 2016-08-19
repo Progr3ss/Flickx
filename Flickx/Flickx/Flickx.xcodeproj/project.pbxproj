@@ -27,6 +27,9 @@
 		916CE7EC1D5AABFA00C3B1B8 /* UIImage+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CE7EB1D5AABFA00C3B1B8 /* UIImage+Decompression.swift */; };
 		916CE7EE1D5AAC0100C3B1B8 /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CE7ED1D5AAC0100C3B1B8 /* RoundedCornersView.swift */; };
 		916CE7F01D5AAC8100C3B1B8 /* FlickxLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916CE7EF1D5AAC8100C3B1B8 /* FlickxLayout.swift */; };
+		91C8E9EC1D615B40007609CA /* CustomImageFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C8E9EB1D615B40007609CA /* CustomImageFlowLayout.swift */; };
+		91C8E9EE1D616DEF007609CA /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C8E9ED1D616DEE007609CA /* UIImageView+DownloadImage.swift */; };
+		91DA48901D60316C0006EDE9 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DA488F1D60316C0006EDE9 /* Genre.swift */; };
 		91E1E32A1D5F28B9007B1201 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91E1E3291D5F28B9007B1201 /* Info.plist */; };
 		91E1E32C1D5F4C5A007B1201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E1E32B1D5F4C5A007B1201 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -74,6 +77,9 @@
 		916CE7EB1D5AABFA00C3B1B8 /* UIImage+Decompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Decompression.swift"; sourceTree = "<group>"; };
 		916CE7ED1D5AAC0100C3B1B8 /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
 		916CE7EF1D5AAC8100C3B1B8 /* FlickxLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickxLayout.swift; sourceTree = "<group>"; };
+		91C8E9EB1D615B40007609CA /* CustomImageFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageFlowLayout.swift; sourceTree = "<group>"; };
+		91C8E9ED1D616DEE007609CA /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		91DA488F1D60316C0006EDE9 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		91E1E3281D5F274F007B1201 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		91E1E3291D5F28B9007B1201 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91E1E32B1D5F4C5A007B1201 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -134,8 +140,10 @@
 				915E9CD01D5D78D100A81668 /* StoryBoard */,
 				915E9CCD1D5D782900A81668 /* Controllers */,
 				915E9CD21D5D7CB500A81668 /* Constants.swift */,
+				91C8E9ED1D616DEE007609CA /* UIImageView+DownloadImage.swift */,
 				915E9CD81D5D7EC400A81668 /* GCDBlackBox.swift */,
 				915E9CDA1D5D7F0900A81668 /* Movie.swift */,
+				91DA488F1D60316C0006EDE9 /* Genre.swift */,
 			);
 			path = Flickx;
 			sourceTree = "<group>";
@@ -174,6 +182,7 @@
 			children = (
 				915E9CB91D5C507900A81668 /* UltravisualLayout.swift */,
 				916CE7EF1D5AAC8100C3B1B8 /* FlickxLayout.swift */,
+				91C8E9EB1D615B40007609CA /* CustomImageFlowLayout.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -342,6 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C8E9EC1D615B40007609CA /* CustomImageFlowLayout.swift in Sources */,
+				91C8E9EE1D616DEF007609CA /* UIImageView+DownloadImage.swift in Sources */,
 				915E9CD51D5D7E0D00A81668 /* LoginViewController.swift in Sources */,
 				91590E9B1D5A912F0061A1DC /* AnnotatedMovieCell.swift in Sources */,
 				915E9CD31D5D7CB500A81668 /* Constants.swift in Sources */,
@@ -352,6 +363,7 @@
 				91590E691D5A8A620061A1DC /* AppDelegate.swift in Sources */,
 				915E9CBA1D5C507900A81668 /* UltravisualLayout.swift in Sources */,
 				915E9CD71D5D7E3900A81668 /* BorderedButton.swift in Sources */,
+				91DA48901D60316C0006EDE9 /* Genre.swift in Sources */,
 				915E9CBE1D5C509200A81668 /* InspirationCell.swift in Sources */,
 				916CE7EA1D5AAAE500C3B1B8 /* HomeScreenViewController.swift in Sources */,
 				915E9CB81D5C501B00A81668 /* InspirationsViewController.swift in Sources */,

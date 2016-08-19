@@ -15,15 +15,15 @@ class AnnotatedMovieCell: UICollectionViewCell {
 	@IBOutlet weak var annotatedMovieViewCell: UIView!
 
 	@IBOutlet weak var imageView: UIImageView!
-	@IBOutlet private weak var imageViewHeightLayoutConstraint: NSLayoutConstraint!
+//	@IBOutlet private weak var imageViewHeightLayoutConstraint: NSLayoutConstraint!
 	
 	
 	
-	override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
-		super.applyLayoutAttributes(layoutAttributes)
-		let attributes = layoutAttributes as! FlickxLayoutAttributes
-		imageViewHeightLayoutConstraint.constant = attributes.photoHeight
-	}
+//	override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
+//		super.applyLayoutAttributes(layoutAttributes)
+//		let attributes = layoutAttributes as! FlickxLayoutAttributes
+//		imageViewHeightLayoutConstraint.constant = attributes.photoHeight
+//	}
 
 }
 

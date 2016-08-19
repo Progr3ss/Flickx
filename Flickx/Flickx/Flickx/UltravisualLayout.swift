@@ -18,10 +18,42 @@ struct UltravisualLayoutConstants {
   }
 }
 
+//class UltravisualLayoutNumberOfColumns: UICollectionViewFlowLayout{
+//	
+//	override init() {
+//		super.init()
+//		setupLayout()
+//	}
+//	
+//	required init?(coder aDecoder: NSCoder) {
+//		super.init(coder: aDecoder)
+//		setupLayout()
+//	}
+//	
+//	override var itemSize: CGSize {
+//		set {
+//			
+//		}
+//		get {
+//			let numberOfColumns: CGFloat = 2
+//			
+//			let itemWidth = (CGRectGetWidth(self.collectionView!.frame) - (numberOfColumns - 1)) / numberOfColumns
+//			return CGSizeMake(itemWidth, itemWidth)
+//		}
+//	}
+//	
+//	func setupLayout() {
+//		minimumInteritemSpacing = 1
+//		minimumLineSpacing = 1
+//		scrollDirection = .Vertical
+//	}
+//	
+//}
+
 class UltravisualLayout: UICollectionViewLayout {
-  
+	
   // MARK: Properties and Variables
-  
+	
   /* The amount the user needs to scroll before the featured cell changes */
   let dragOffset: CGFloat = 180.0
   
@@ -130,3 +162,4 @@ class UltravisualLayout: UICollectionViewLayout {
 	}
   
 }
+
