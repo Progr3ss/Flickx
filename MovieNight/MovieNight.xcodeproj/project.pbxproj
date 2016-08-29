@@ -15,6 +15,10 @@
 		9141FC8E1D66AE6100857744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9141FC8C1D66AE6100857744 /* LaunchScreen.storyboard */; };
 		9141FC991D66AE6100857744 /* MovieNightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141FC981D66AE6100857744 /* MovieNightTests.swift */; };
 		9141FCA41D66AE6100857744 /* MovieNightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141FCA31D66AE6100857744 /* MovieNightUITests.swift */; };
+		9141FCB21D66AEB300857744 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141FCB11D66AEB300857744 /* HomeScreenViewController.swift */; };
+		9141FCB41D66AEEB00857744 /* CustomImageFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141FCB31D66AEEB00857744 /* CustomImageFlowLayout.swift */; };
+		9141FCB61D66AF0300857744 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141FCB51D66AF0300857744 /* Movie.swift */; };
+		9141FCB81D66AF2200857744 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141FCB71D66AF2200857744 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		9141FC9F1D66AE6100857744 /* MovieNightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieNightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9141FCA31D66AE6100857744 /* MovieNightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNightUITests.swift; sourceTree = "<group>"; };
 		9141FCA51D66AE6100857744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9141FCB11D66AEB300857744 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		9141FCB31D66AEEB00857744 /* CustomImageFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageFlowLayout.swift; sourceTree = "<group>"; };
+		9141FCB51D66AF0300857744 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		9141FCB71D66AF2200857744 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +110,11 @@
 				9141FC801D66AE6000857744 /* AppDelegate.swift */,
 				9141FC821D66AE6000857744 /* ViewController.swift */,
 				9141FC841D66AE6000857744 /* Main.storyboard */,
+				9141FCB31D66AEEB00857744 /* CustomImageFlowLayout.swift */,
+				9141FCB11D66AEB300857744 /* HomeScreenViewController.swift */,
+				9141FCB71D66AF2200857744 /* Constants.swift */,
 				9141FC8A1D66AE6100857744 /* Assets.xcassets */,
+				9141FCB51D66AF0300857744 /* Movie.swift */,
 				9141FC8C1D66AE6100857744 /* LaunchScreen.storyboard */,
 				9141FC8F1D66AE6100857744 /* Info.plist */,
 				9141FC871D66AE6100857744 /* MovieNight.xcdatamodeld */,
@@ -260,8 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9141FC831D66AE6000857744 /* ViewController.swift in Sources */,
+				9141FCB21D66AEB300857744 /* HomeScreenViewController.swift in Sources */,
+				9141FCB61D66AF0300857744 /* Movie.swift in Sources */,
 				9141FC811D66AE6000857744 /* AppDelegate.swift in Sources */,
+				9141FCB81D66AF2200857744 /* Constants.swift in Sources */,
 				9141FC891D66AE6100857744 /* MovieNight.xcdatamodeld in Sources */,
+				9141FCB41D66AEEB00857744 /* CustomImageFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
